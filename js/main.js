@@ -12,6 +12,12 @@ window.onscroll = function () {
     nav.style.top = "0";
   } else {
     nav.style.top = "-60px";
+
+    if (window.innerWidth <= 768) {
+      if (navItems.classList.contains("show")) {
+        navItems.classList.remove("show");
+      }
+    }
   }
   previousScrollPosition = currentScrollPosition;
 
@@ -92,9 +98,7 @@ var typewriter = new Typewriter(typer, {
 typewriter
   .pauseFor(1100)
   .typeString("Hello")
-  .pauseFor(1100)
-  .deleteAll()
-  .typeString("Welcome to my website")
+
   .pauseFor(1100)
   .deleteAll()
   .typeString("My name is")
