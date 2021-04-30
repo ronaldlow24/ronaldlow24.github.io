@@ -68,6 +68,10 @@ function topFunction() {
   }
 }
 
+function switchMode() {
+  console.log("switch mode is clicked.");
+}
+
 var typer = document.getElementById("typer");
 
 var typewriter = new Typewriter(typer, {
