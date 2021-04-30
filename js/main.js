@@ -85,6 +85,20 @@ function switchMode() {
   $("#houseFun").toggle();
 
   $("#twinkling").toggle();
+
+  console.log($("#nav").css("background-color"));
+
+  if ($("#nav").css("background-color") === "rgb(245, 222, 179)") {
+    $("#nav").css("background-color", "rgb(228, 182, 255)");
+  } else {
+    $("#nav").css("background-color", "wheat");
+  }
+
+  if ($("#nav-items").css("background-color") === "rgb(245, 222, 179)") {
+    $("#nav-items").css("background-color", "rgb(228, 182, 255)");
+  } else {
+    $("#nav-items").css("background-color", "wheat");
+  }
 }
 
 var typer = document.getElementById("typer");
@@ -101,8 +115,11 @@ typewriter
 
   .pauseFor(1100)
   .deleteAll()
-  .typeString("My name is")
+  .typeString("My name is Ronald")
   .pauseFor(1000)
+  .deleteAll()
+  .typeString("I am a web developer")
+  .pauseFor(1400)
   .start();
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
