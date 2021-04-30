@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ronald's</title>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/worldwide.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap"
+      />
+    </noscript>
+  </head>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img
+        src="img/animat-rocket-color.gif"
+        width="100"
+        height="100"
+        alt="ERROR"
+      />
+    </button>
+
+    <button onclick="switchMode()" id="modeButton" title="Switch Mode">
+      <img src="img/power-button.png" width="50" height="50" alt="" />
+    </button>
+
+    <div class="nav" id="nav">
+      <div class="navbar">
+        <a href="#" onclick="topFunction()"
+          ><img src="img/worldwide.png" class="logo" alt="ERROR"
+        /></a>
+        <div id="menu-icon" class="menu-icon">
+          <span></span>
+        </div>
+        <ul class="nav-items" id="nav-items">
+          <li class="item" id="home-nav-label">
+            <a href="#" onclick="topFunction()">Home</a>
+          </li>
+          <li class="item"><a href="#projects">Projects</a></li>
+          <li class="item"><a href="#photos">Photos</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page" id="home">
+      <div class="page-container">
+        <div id="typer"></div>
+
+        <svg viewBox="0 0 960 100">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">
+              Ronald Low Cheng Young
+            </text>
+          </symbol>
+
+          <g class="g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+
+        <lottie-player
+          src="https://assets6.lottiefiles.com/packages/lf20_zubh6imr.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+
+        <p>
+          I am a junior software developer, web developer, and fresh graduate
+          from Asia Pacific University (APU) with Bachelor's Degree in
+          Information Technology with a specialism in Information System
+          Security. I have passion in coding and highly interest in web
+          developing. My field of study is relating to security, through
+          combining my specialty and passion, I am able to work in an efficient
+          way. I am always eager to learn and improve. I take self-improvement
+          and responsibility seriously and exciting whenever I get a chance to
+          gain new knowledge. I experienced in ASP.NET, PHP, C#, JavaScript
+          (MERN). Feel free to check out my GitHub link.
+        </p>
+
+        <div class="about">
+          <div class="terminal-header">
+            <div class="title">
+              <i class="fas fa-terminal"></i>Command Prompt
+            </div>
+            <div class="right-side-buttons">
+              <div class="fas fa-window-minimize"></div>
+              <div class="fas fa-window-restore"></div>
+              <div class="fas fa-window-close"></div>
+            </div>
+          </div>
+          <div class="terminal-window">
+            <p class="input">Microsoft Windows [Version 10.0.19042.928]</p>
+            <p class="return">
+              (c) Microsoft Corporation. All rights reserved.
+            </p>
+
+            <div class="statement" id="top">
+              <p class="input">C:\Users\ronald>whoami</p>
+              <p class="return">APU\Ronald Low Cheng Young</p>
+            </div>
+            <div class="statement">
+              <p class="input">
+                C:\Users\ronald>curl https://ronaldlow.com/getUser/json -H
+                "Accept: application/json"
+              </p>
+              <p class="return">[</p>
+              <p class="return"><span>&nbsp;</span>{</p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>name: "Ronald Low Cheng
+                Young",
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>email:
+                <a href="mailto:ron556611@gmail.com">"ron556611@gmail.com"</a>,
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>location: "Johor Bahru,
+                Johor, Malaysia",
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>phone: "+60127848343",
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>age: "22",
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>university: "Asia Pacific
+                University of Technology & Innovation (APU)",
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>major: "BSc (Hons) in
+                Information Technology with a specialism in Information System
+                Security",
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>github:
+                <a href="https://github.com/ronaldlow24"
+                  >"https://github.com/ronaldlow24",</a
+                >
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>linkedin:
+                <a
+                  href="https://www.linkedin.com/in/ronald-low-cheng-young-872835167"
+                  >"https://www.linkedin.com/in/ronald-low-cheng-young-872835167",</a
+                >
+              </p>
+              <p class="return">
+                <span>&nbsp;</span><span>&nbsp;</span>resume: "<a
+                  href="Ronald-Low-Cheng-Young-CV.pdf"
+                  download
+                  >ronald_cv.pdf</a
+                >",
+              </p>
+
+              <p class="return"><span>&nbsp;</span>}</p>
+              <p class="return">]</p>
+            </div>
+
+            <div class="statement" id="bottom">
+              <p class="input">C:\Users\ronald><span>&nbsp;</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title" id="projects">
+          <h2>Projects</h2>
+          <a class="quote" href="https://github.com/ronaldlow24"
+            >https://github.com/ronaldlow24</a
+          >
+
+          <div class="project-card">
+            <h3 class="project-title">Phonebook-MERN</h3>
+            <p class="project-description">
+              This is a tryout project for MERN stack. The web application
+              contain authentication, pagination, and basic CRUD operation.
+              Netlify for frontend and Heroku for backend.
+            </p>
+
+            <div class="project-skills">
+              <span class="project-skill">React</span>
+              <span class="project-skill">MongoDB</span>
+              <span class="project-skill">Node.js</span>
+              <span class="project-skill">Express.js</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://phonebook-mern-tryout.netlify.app/"
+                class="live-demo button"
+                >Live Demo
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                href="https://github.com/ronaldlow24/Phonebook-MERN"
+                class="link button"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">
+              Public-Facilities-Feedback-System-Final-Year-Project-PHP
+            </h3>
+            <p class="project-description">
+              The final year project introduces a new and improved Public
+              Facilities Feedback System that derivate from the existing Public
+              Facilities Feedback System, ‘i-Tegur’ for Malaysia. Public
+              Facilities Feedback System is a system that let the user file a
+              complaint or feedback toward public facility to local government
+              through uploading some photos to the application, the system also
+              provides a platform for local government and Local Government
+              Department to review the complaint and feedback. The remake of the
+              Public Facilities Feedback System will acquire all of the
+              functionalities in the existing model, resolve all of the known
+              and discovered issues, and further add on some new additional
+              features. Next, the remake of the Public Facilities Feedback
+              System will be developed in a whole new user interface and in the
+              progressive web application manner to cater for both mobile and
+              desktop platform, it also inherits most of the benefits in the
+              progressive web application, increasing the usability and the user
+              experience of the proposed system. The proposed system is
+              developed in PHP combined with the web application front-end
+              programming language.
+            </p>
+
+            <div class="project-skills">
+              <span class="project-skill">HTML5</span>
+              <span class="project-skill">CSS</span>
+              <span class="project-skill">PHP</span>
+              <span class="project-skill">SQL</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://pssf.infinityfreeapp.com/"
+                class="live-demo button"
+                >Live Demo
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                href="https://github.com/ronaldlow24/Public-Facilities-Feedback-System-Final-Year-Project-PHP"
+                class="link button"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">PBKitchen-ASP.NET-MVC-Azure-Cloud</h3>
+            <p class="project-description">
+              This is a bare minimum e-commerce web application that host in
+              Azure. This project introduce .NET multi-tier, MVC, and Azure
+              Cloud Services. The style is not that beauty because the cloud
+              implementation is more focused in this project. The website might
+              be not functionable if the credit in Azure is spent.
+            </p>
+            <div class="project-skills">
+              <span class="project-skill">Azure SQL</span>
+              <span class="project-skill">Azure Blob</span>
+              <span class="project-skill">Azure Table</span>
+              <span class="project-skill">Azure App Services</span>
+              <span class="project-skill">Azure Service Bus</span>
+              <span class="project-skill">.NET</span>
+              <span class="project-skill">MVC</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://pbkitchen.azurewebsites.net/"
+                class="live-demo button"
+                >Live Demo
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a
+                href="https://github.com/ronaldlow24/PBKitchen-ASP.NET-MVC-Azure-Cloud"
+                class="link button"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">Bestile Ceramics Sdn. Bhd.</h3>
+            <p class="project-description">Work In Progress</p>
+            <div class="project-skills">
+              <span class="project-skill">HTML</span>
+              <span class="project-skill">JavaScript</span>
+              <span class="project-skill">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="section-title" id="photos">
+          <h2><i class="fas fa-camera-retro"></i> Photos</h2>
+          <p class="quote">
+            “Photography is the story I fail to put into words.” –
+            <a href="https://www.instagram.com/destinsparks/">Destin Sparks</a>
+          </p>
+          <div class="masonry-layout">
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/48904657791_0eb41b6637_b.jpg"
+                alt="Kitty hiding behind plant branches"
+                title="Kitty"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/48887909508_ecfa8ca997_b.jpg"
+                alt="35mm film photo - LOVE letters sign in a Las Vegas hotel"
+                title="35mm - L.O.V.E."
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/49377353001_fd7ffcc596_b.jpg"
+                alt="A building in Pasadena, CA"
+                title="Pasadena Building"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1963/45605882391_608f6b0c2e_b.jpg"
+                alt="Goose with the Seattle skyline in the background"
+                title="Honk"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1953/44691939805_2c308ea5d7_b.jpg"
+                alt="San Diego Safari landscape"
+                title="San Diego Safari"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/47850008771_69ee3d5e16_b.jpg"
+                alt="Hermann Park Lake in Houston, Texas with birds flying"
+                title="Hermann Park Lake"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1974/44691932235_7a97da7d3f_b.jpg"
+                alt="Leaves in the sun"
+                title="Leaves"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/47850007431_223df9dfd3_b.jpg"
+                alt="Kitty with squinting eyes"
+                title="Kitty"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1902/45605875431_c73e0fa3d7_b.jpg"
+                alt="At the beach"
+                title="At the Beach"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1917/30664843797_89da7a353f_b.jpg"
+                alt="Multidirectional cross paths in Pasadena, CA"
+                title="Where Do I Cross"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1916/44691936095_fd7de3579c_b.jpg"
+                alt="Snoqualmie Waterfall in Seattle, WA"
+                title="Waterfall"
+              />
+            </div>
+
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/48887909523_6b2fac404b_b.jpg"
+                alt="35mm film photo - On the road to Las Vegas"
+                title="35mm - On the Road to Las Vegas"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1933/44691942895_8ab68a7200_b.jpg"
+                alt="San Diego sunset at the beach"
+                title="San Diego Sunset"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1933/30664857307_864594747c_b.jpg"
+                alt="Blue ocean and sky with fluffy clouds"
+                title="Blue and Fluffy"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1902/45605875431_c73e0fa3d7_b.jpg"
+                alt="At the beach"
+                title="At the Beach"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1929/44691937385_b46543f79d_b.jpg"
+                alt="Buildings"
+                title="Buildings"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1958/45555310682_6a3a92eec0_b.jpg"
+                alt="Walking path at the beach"
+                title="Beach Walk"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/50775827653_fe8545f7bb_b.jpg"
+                alt="35mm film photo - Car side mirror selfie"
+                title="35mm - Car Side Mirror Selfie"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1969/44880411914_a233fb64d6_b.jpg"
+                alt="Seattle clocktower in between sunset and blue hour"
+                title="In Between Sunset and Blue Hour"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/48888391711_055bbe737e_b.jpg"
+                alt="Yellow lantern"
+                title="Yellow"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/50343353806_28e6fa628c_b.jpg"
+                alt="House on Venice Canals reflection"
+                title="House on Venice Canals"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1953/30664853227_a2399d21d9_b.jpg"
+                alt="Sunny blue skies with painted clouds and a slope of trees"
+                title="Painted Clouds"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1978/44691925945_fd13fcb504_b.jpg"
+                alt="Person's back with lots of bokeh on the street at night"
+                title="Low Light Street Bokeh"
+              />
+            </div>
+
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1951/45605887431_64a43bd161_b.jpg"
+                alt="Autumn leaves"
+                title="Autumn Leaves"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1975/45605886531_ed529b5c87_b.jpg"
+                alt="San Diego Safari landscape reflection"
+                title="San Diego Safari Reflection"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1925/43788177460_e4cae175b6_b.jpg"
+                alt="Acorn"
+                title="Acorn"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1977/30664863717_c1431774da_b.jpg"
+                alt="San Diego Safari landscape with trees"
+                title="San Diego Safari"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/4874/46182980091_bde78be58d_b.jpg"
+                alt="Birds over the ocean at sunset"
+                title="Birds at Sunset"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1941/30664852817_cfc3bc6a1f_b.jpg"
+                alt="On the highway to Snoqualmie, blue skies and surrounded by trees"
+                title="On the highway to Snoqualmie"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1910/44881250424_83a0acfbf1_b.jpg"
+                alt="Clown fish at the aquarium"
+                title="Nemo"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/1931/44691938525_8556b4252b_b.jpg"
+                alt="Fish at the aquarium"
+                title="Fish"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/47850007591_9cd35cc661_b.jpg"
+                alt="Sting ray at the aquarium"
+                title="Ray"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/47850007841_e66fd34615_b.jpg"
+                alt="Bird model"
+                title="Bird Model"
+              />
+            </div>
+            <div class="brick">
+              <img
+                src="https://live.staticflickr.com/65535/49377551182_bd49989330_b.jpg"
+                alt="On the streets of Pasadena, CA"
+                title="On the streets of Pasadena"
+              />
+            </div>
+          </div>
+          <p class="more-info">
+            Check out my
+            <a href="https://www.instagram.com/anniedotexe/">Instagram</a> and
+            <a href="https://www.flickr.com/people/anniewuphotos/">Flickr</a>
+            for more photography.
+          </p>
+        </div> -->
+
+        <div class="section-title" id="contact">
+          <h2>Contact</h2>
+
+          <p>Got a project? Feel free to contact me</p>
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_9wjm14ni.json"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+          <div class="social-links">
+            <a href="mailto:ron556611@gmail.com">
+              <img src="./img/gmail.svg" class="socials button" alt="Gmail" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ronald-low-cheng-young-872835167/"
+              aria-label="LinkedIn"
+            >
+              <img
+                src="./img/linkedin.svg"
+                class="socials button"
+                alt="LinkedIn Profile"
+              />
+            </a>
+            <a href="https://github.com/ronaldlow24" aria-label="GitHub">
+              <img
+                src="./img/github.svg"
+                class="socials button"
+                alt="GitHub Profile"
+              />
+            </a>
+            <a href="tel:+60127848343" aria-label="Phone">
+              <img
+                src="./img/telephone-auricular-with-cable.png"
+                class="socials button"
+                alt="Phone Number"
+              />
+            </a>
+          </div>
+        </div>
+
+        <footer class="copyright">
+          <span
+            >Ronald Low Cheng Young &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </span>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
