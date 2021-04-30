@@ -597,6 +597,7 @@ h1 a {
 
 #modeButton {
   /* display: none;  */
+
   position: fixed;
   bottom: 20px; /* Place the button at the bottom of the page */
   left: 30px; /* Place the button 30px from the right */

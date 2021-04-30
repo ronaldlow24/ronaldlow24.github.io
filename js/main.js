@@ -69,11 +69,10 @@ function topFunction() {
 }
 
 function switchMode() {
-  console.log("switch mode is clicked.");
   var element = document.body;
   element.classList.toggle("funMode");
 
-  $("#typer").toggleClass("typerFun", addOrRemove);
+  $("#typer").toggleClass("typerFun");
 
   $("#star").toggle();
   $("#house").toggle();
