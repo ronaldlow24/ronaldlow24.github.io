@@ -22,10 +22,10 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
   height: 100%; /* force the BODY element to match the height of the HTML element */
-  background-color: black;
+  background-color: wheat;
   font-weight: 400;
   font-size: 1em;
-  color: #ff00f7;
+  color: #000000;
   text-align: center;
 
   scrollbar-width: thin;
@@ -706,6 +706,10 @@ svg {
   line-height: 78px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+  /* color: #9542b6; */
+}
+
+#typerFun {
   color: #9542b6;
 }
 
@@ -787,7 +791,7 @@ svg {
   right: 0;
   bottom: 0;
   height: inherit;
-  display: block;
+  display: none;
 }
 
 .stars {
@@ -801,7 +805,7 @@ svg {
   background: transparent
     url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
     top center;
-  z-index: -98;
+  z-index: -99;
 
   -moz-animation: move-twink-back 200s linear infinite;
   -ms-animation: move-twink-back 200s linear infinite;
@@ -867,4 +871,13 @@ svg {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
   }
+}
+
+.funMode {
+  color: #ff00f7;
+  background-color: rgb(0, 0, 0);
+}
+
+#houseFun {
+  display: none;
 }

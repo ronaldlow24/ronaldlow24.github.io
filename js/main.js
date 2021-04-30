@@ -70,6 +70,16 @@ function topFunction() {
 
 function switchMode() {
   console.log("switch mode is clicked.");
+  var element = document.body;
+  element.classList.toggle("funMode");
+
+  $("#typer").toggleClass("typerFun", addOrRemove);
+
+  $("#star").toggle();
+  $("#house").toggle();
+  $("#houseFun").toggle();
+
+  $("#twinkling").toggle();
 }
 
 var typer = document.getElementById("typer");
