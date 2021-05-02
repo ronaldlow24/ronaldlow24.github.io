@@ -12,10 +12,10 @@ AOS.init();
 $(window).on("load", function () {
   $(window)
     .scroll(function () {
-      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight() / 2;
       $(".fade").each(function () {
         /* Check the location of each desired element */
-        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        var objectBottom = $(this).offset().top;
 
         /* If the element is completely within bounds of the window, fade it in */
         if (objectBottom < windowBottom) {
