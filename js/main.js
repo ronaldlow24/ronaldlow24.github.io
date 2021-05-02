@@ -5,6 +5,9 @@ var navItems = document.getElementById("nav-items");
 //Get the button:
 var mybutton = document.getElementById("myBtn");
 
+//activate animate on screen plugin CDN
+AOS.init();
+
 //project fade effect
 $(window).on("load", function () {
   $(window)

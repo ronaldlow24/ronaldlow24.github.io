@@ -58,6 +58,9 @@
         href="https://fonts.googleapis.com/css?family=Noto+Sans|Fira+Mono&display=swap"
       />
     </noscript>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <div id="star" class="stars"></div>
   <div id="twinkling" class="twinkling"></div>
@@ -76,6 +79,7 @@
       onclick="switchMode()"
       id="modeButton"
       title="Click Me to Switch Mode!"
+      data-aos="fade-right"
     >
       <img src="img/power-button.png" width="70" height="70" alt="" />
     </button>
@@ -96,7 +100,7 @@
     </div>
 
     <div class="page" id="home">
-      <div class="page-container">
+      <div class="page-container" data-aos="fade-up">
         <div id="typer"></div>
 
         <lottie-player
@@ -134,7 +138,7 @@
           </p>
         </div>
 
-        <div class="about">
+        <div class="about" data-aos="fade-up">
           <h2 style="text-align: center">Personal Information</h2>
 
           <div class="terminal-header">
@@ -604,7 +608,7 @@
           </p>
         </div> -->
 
-        <div class="section-title" id="contact">
+        <div class="section-title" id="contact" data-aos="fade-down">
           <h2>Contact</h2>
 
           <p>Got a project? Feel free to contact me</p>
