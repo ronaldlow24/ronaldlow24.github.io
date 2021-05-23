@@ -235,7 +235,17 @@ h1 a {
 /* Quote Under Section Titles */
 
 .quote {
+  display: inline-block;
+
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.quote:hover {
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 /* About Me Terminal Window */
@@ -309,7 +319,7 @@ h1 a {
 }
 
 .return a:hover {
-  color: #ffffff;
+  color: #ffd900;
   transition: all 0.2s ease-out;
 }
 
@@ -400,38 +410,6 @@ h1 a {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-
-/* Photos */
-
-.masonry-layout {
-  display: block;
-  margin: 50px auto;
-  column-gap: 1.4em;
-}
-
-.masonry-layout .brick {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 1.4em;
-}
-
-.masonry-layout .brick img {
-  transition: all 0.5s ease-in-out;
-  backface-visibility: hidden;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-.more-info a {
-  color: #4a2040;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.more-info a:hover {
-  color: #bc4e69;
 }
 
 /* Contact Me */
@@ -622,11 +600,10 @@ h1 a {
 
 #typer {
   padding-top: 50px;
+  font-weight: 1000;
   font-size: 2.5em;
-  line-height: 78px;
   font-weight: 400;
   font-family: "Courier New", monospace;
-  /* color: #9542b6; */
 }
 
 #typerFun {
